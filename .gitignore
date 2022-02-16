@@ -77,3 +77,5 @@ typings/
 
 # Ignore dist
 dist/
+
+**/.DS_Store

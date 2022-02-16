@@ -19,12 +19,17 @@ const source = {
     text: {
         "Content-Type": "text/plain",
     },
+    svg: {
+        "Content-Type": "image/svg+xml",
+    },
 };
 
-export default function (headers: Headers, type: keyof typeof source): Headers {
+export default function (headers: Headers, ...types: (keyof typeof source)[]): Headers {
     const new_headers = new Headers(headers);
-    for (const [key, value] of Object.entries(source[type])) {
-        new_headers.set(key, value);
+    for (const type of types) {
+        for (const [key, value] of Object.entries(source[type])) {
+            new_headers.set(key, value);
+        }
     }
     return new_headers;
 }

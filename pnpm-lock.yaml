@@ -12,13 +12,17 @@ specifiers:
   eslint-config-prettier: ^8.3.0
   itty-router: ^2.4.10
   jest: ^27.4.7
+  mathjax-full: ^3.2.0
   prettier: ^2.5.1
+  tex-to-svg: ^0.2.0
   ts-jest: ^27.1.3
   tsup: ^5.11.11
   typescript: ^4.5.5
 
 dependencies:
   itty-router: 2.4.10
+  mathjax-full: 3.2.0
+  tex-to-svg: 0.2.0
 
 devDependencies:
   '@cloudflare/workers-types': 3.3.1
@@ -1249,6 +1253,11 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
+  /commander/9.0.0:
+    resolution: {integrity: sha512-JJfP2saEKbQqvW+FI93OYUB4ByV5cizMpFMiiJI8xDbBvQvSkIk0VvQdn1CZ8mqAO8Loq2h0gYTYtDFUZUeERw==}
+    engines: {node: ^12.20.0 || >=14}
+    dev: false
+
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: true
@@ -1660,6 +1669,11 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /esm/3.2.25:
+    resolution: {integrity: sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==}
+    engines: {node: '>=6'}
+    dev: false
 
   /espree/9.3.0:
     resolution: {integrity: sha512-d/5nCsb0JcqsSEeQzFZ8DH1RmxPcglRWh24EFTlUEmCKoehXGdpsx0RkHDubqUI8LSAIKMQp4r9SzQ3n+sm4HQ==}
@@ -2776,6 +2790,15 @@ packages:
       tmpl: 1.0.5
     dev: true
 
+  /mathjax-full/3.2.0:
+    resolution: {integrity: sha512-D2EBNvUG+mJyhn+M1C858k0f2Fc4KxXvbEX2WCMXroV10212JwfYqaBJ336ECBSz5X9L5LRoamxb7AJtg3KaJA==}
+    dependencies:
+      esm: 3.2.25
+      mhchemparser: 4.1.1
+      mj-context-menu: 0.6.1
+      speech-rule-engine: 3.3.3
+    dev: false
+
   /merge-stream/2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
     dev: true
@@ -2784,6 +2807,10 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
     dev: true
+
+  /mhchemparser/4.1.1:
+    resolution: {integrity: sha512-R75CUN6O6e1t8bgailrF1qPq+HhVeFTM3XQ0uzI+mXTybmphy3b6h4NbLOYhemViQ3lUs+6CKRkC3Ws1TlYREA==}
+    dev: false
 
   /micromatch/4.0.4:
     resolution: {integrity: sha512-pRmzw/XUcwXGpD9aI9q/0XOwLNygjETJ8y0ao0wdqprrzDa4YnxLcz7fQRZr8voh8V10kGhABbNcHVk5wHgWwg==}
@@ -2834,6 +2861,10 @@ packages:
       minipass: 3.1.6
       yallist: 4.0.0
     dev: true
+
+  /mj-context-menu/0.6.1:
+    resolution: {integrity: sha512-7NO5s6n10TIV96d4g2uDpG7ZDpIhMh0QNfGdJw/W47JswFcosz457wqz/b5sAKvl12sxINGFCn80NZHKwxQEXA==}
+    dev: false
 
   /mkdirp/1.0.4:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
@@ -3210,6 +3241,15 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
+  /speech-rule-engine/3.3.3:
+    resolution: {integrity: sha512-0exWw+0XauLjat+f/aFeo5T8SiDsO1JtwpY3qgJE4cWt+yL/Stl0WP4VNDWdh7lzGkubUD9lWP4J1ASnORXfyQ==}
+    hasBin: true
+    dependencies:
+      commander: 9.0.0
+      wicked-good-xpath: 1.3.0
+      xmldom-sre: 0.1.31
+    dev: false
+
   /sprintf-js/1.0.3:
     resolution: {integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=}
     dev: true
@@ -3339,6 +3379,12 @@ packages:
       glob: 7.2.0
       minimatch: 3.0.4
     dev: true
+
+  /tex-to-svg/0.2.0:
+    resolution: {integrity: sha512-YkP5V4O3u+i2odO5ETEISjVTemfzrx+YeG/XHXRoq3sfL0p8q4zDdlP/h+mna/4tEu6EylJOKzJws3iOnzU/rA==}
+    dependencies:
+      mathjax-full: 3.2.0
+    dev: false
 
   /text-table/0.2.0:
     resolution: {integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=}
@@ -3601,6 +3647,10 @@ packages:
       isexe: 2.0.0
     dev: true
 
+  /wicked-good-xpath/1.3.0:
+    resolution: {integrity: sha1-gbDpXoZQ5JyUsiKY//hoa1VTz2w=}
+    dev: false
+
   /word-wrap/1.2.3:
     resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}
     engines: {node: '>=0.10.0'}
@@ -3648,6 +3698,11 @@ packages:
   /xmlchars/2.2.0:
     resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
     dev: true
+
+  /xmldom-sre/0.1.31:
+    resolution: {integrity: sha512-f9s+fUkX04BxQf+7mMWAp5zk61pciie+fFLC9hX9UVvCeJQfNHRHXpeo5MPcR0EUf57PYLdt+ZO4f3Ipk2oZUw==}
+    engines: {node: '>=0.1'}
+    dev: false
 
   /y18n/5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}
