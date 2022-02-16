@@ -1,4 +1,4 @@
-# Latex SVG Worker
+# TeX SVG Worker
 
 A Cloudflare Worker that provides translate TeX to SVG.
 
