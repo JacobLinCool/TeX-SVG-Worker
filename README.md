@@ -13,8 +13,10 @@ GET https://tex.jacob.workers.dev/?tex=<TeX String>
 **Example:** <https://tex.jacob.workers.dev/?tex=\int_0^\infty\frac{x^2}{1%2bx^2}dx>
 
 ![DEMO](https://tex.jacob.workers.dev/?tex=\int_0^\infty\frac{x^2}{1%2bx^2}dx&css=svg{background:white})
+![CSS DEMO](https://tex.jacob.workers.dev/?tex=-b%20\pm%20\sqrt{b^2%20-%204ac}%20\over%202a&css=svg{color:white;background:royalblue})
 
-Add `&inline=true` to the end of the URL to get the "inline" version of the image.
+- Add `&inline=true` to the end of the URL to get the "inline" version of the image.
+- Add `&css=<CSS Rules>` to inject css into the image. For example: `svg{color:white;background:royalblue}`
 
 ### Use Post
 
