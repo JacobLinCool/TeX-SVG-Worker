@@ -22,6 +22,9 @@ const source = {
     svg: {
         "Content-Type": "image/svg+xml",
     },
+    "cache.1y": {
+        "Cache-Control": "public, max-age=31536000",
+    },
 };
 
 export default function (headers: Headers, ...types: (keyof typeof source)[]): Headers {

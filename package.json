@@ -36,7 +36,6 @@
     },
     "dependencies": {
         "itty-router": "^2.4.10",
-        "mathjax-full": "^3.2.0",
-        "tex-to-svg": "^0.2.0"
+        "mathjax-full": "^3.2.0"
     }
 }
