@@ -12,6 +12,8 @@ GET https://tex.jacob.workers.dev/?tex=<TeX String>
 
 **Example:** <https://tex.jacob.workers.dev/?tex=\int_0^\infty\frac{x^2}{1%2bx^2}dx>
 
+![DEMO](https://tex.jacob.workers.dev/?tex=\int_0^\infty\frac{x^2}{1%2bx^2}dx&css=svg{background:white})
+
 Add `&inline=true` to the end of the URL to get the "inline" version of the image.
 
 ### Use Post
