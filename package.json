@@ -19,7 +19,7 @@
         "lib"
     ],
     "devDependencies": {
-        "@cloudflare/workers-types": "^3.3.1",
+        "@cloudflare/workers-types": "^4.0.0",
         "@cloudflare/wrangler": "^1.19.7",
         "@types/jest": "^27.4.0",
         "@types/node": "^17.0.10",
